@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+#image {
+  height: {{imgHeight}}px;
+  margin-left: {{imgLeftMargin}}px;
+  width: {{imgWidth}}px;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.gradient {
+  background: {{gradientStartColor}};
+  background: linear-gradient(90deg, {{gradientStartColor}} 0%, {{gradientEndColor}} 100%);
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: {{duration}}s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
