@@ -1,0 +1,28 @@
+<link
+  href="https://fonts.googleapis.com/css?family={{font}}:400,600,700"
+  rel="stylesheet"
+/>
+<div
+  id="bk-donobar_wrapper"
+  class="w-95 h-95 text-color flex flex-align-center"
+>
+  <div
+    id="bk-donobar"
+    class="w-100 flex flex-row flex-align-center bordered shadowed"
+  >
+    <div id="bk-donobar_text" class="absolute-wrapper flex">
+      <span class="text-center flex-grow"
+        ><span class="currency"></span
+        ><span id="bk-donobar_current_value"></span
+      ></span>
+      <span id="bk-donobar_goal_value" class="text-right"
+        ><span class="currency"></span>{{donationGoal}}</span
+      >
+    </div>
+    <div
+      id="bk-donobar_filled_bar"
+      class="bar-color-bg trans-w h-100"
+      style="width: 0"
+    ></div>
+  </div>
+</div>
